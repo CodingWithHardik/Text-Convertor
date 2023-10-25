@@ -4,7 +4,7 @@ import About from "./components/About";
 import TextForm from "./components/TextForm";
 import React, { useState } from "react";
 // import Alert from "./components/Alert";
-import { BrowserRouter,Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import toast from "react-hot-toast";
 import Footer from "./components/Footer";
@@ -31,7 +31,7 @@ function App() {
   // };
   return (
    <>
-    <BrowserRouter>
+    
       <Navbar title="TextUtils" mode ={mode} togglemode={togglemode} />
       {/* <Alert alert={alert}/> */}
       <div className="container my-3">
@@ -40,7 +40,6 @@ function App() {
           <Route path="about" element={<About mode ={mode}/>} />
         </Routes>
       </div>
-      </BrowserRouter>
       <Footer/>
     </>
   );
